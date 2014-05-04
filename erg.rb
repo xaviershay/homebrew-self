@@ -15,7 +15,7 @@ class Erg < Formula
   end
 
   bottle do
-    root_url 'https://raw.githubusercontent.com/xaviershay/homebrew-self/master/'
+    root_url 'https://raw.githubusercontent.com/xaviershay/homebrew-self/master'
     cellar :any
     sha1 "14d7006ab7fe8bd66e60535a12aabc8f129ed30d" => :mavericks
   end
