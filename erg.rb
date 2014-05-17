@@ -2,8 +2,9 @@ require "formula"
 
 class Erg < Formula
   homepage "https://github.com/xaviershay/erg"
-  url "https://github.com/xaviershay/erg/archive/v1.0.1.tar.gz"
-  sha1 "fd8d366a3229f8f62ea8203ca4f1f64b372bce3f"
+  url "https://github.com/xaviershay/erg/archive/v1.1.0.tar.gz"
+  head "https://github.com/xaviershay/erg.git"
+  sha1 "bc964559206017c4c6e9e688c191d9cea888f512"
 
   depends_on 'go' => :build
 
@@ -17,7 +18,6 @@ class Erg < Formula
   bottle do
     root_url 'https://raw.githubusercontent.com/xaviershay/homebrew-bottles/master'
     cellar :any
-    sha1 "14d7006ab7fe8bd66e60535a12aabc8f129ed30d" => :mavericks
-    sha1 "c6e1a4c6a1a3eec3584287fc3fdc6720c0abe215" => :mountain_lion
+    sha1 "df07881d42452f4beb8f46753e1bafc82ca02632" => :mavericks
   end
 end
