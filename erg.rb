@@ -19,5 +19,6 @@ class Erg < Formula
     root_url 'https://raw.githubusercontent.com/xaviershay/homebrew-bottles/master'
     cellar :any
     sha1 "df07881d42452f4beb8f46753e1bafc82ca02632" => :mavericks
+    sha1 "9a01536fe0d30615d59b493ac44bb24905ae11a9" => :mountain_lion
   end
 end
