@@ -18,7 +18,7 @@ class Gssh < Formula
   bottle do
     root_url 'https://raw.githubusercontent.com/xaviershay/homebrew-bottles/master'
     cellar :any
-    sha1 "24c1f75ec6d8f779509b3c9384991ee73c7d17b4" => :mountain_lion
-    sha1 "1f576f3fa7bc554773f13669a6a8389f5caae636" => :mavericks
+    revision 1
+    sha1 "5c403897eee083b13ec2260399a0d1c84d767afc" => :mountain_lion
   end
 end
