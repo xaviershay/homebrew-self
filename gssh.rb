@@ -15,4 +15,10 @@ class Gssh < Formula
     system 'go', 'build', 'gssh.go'
     bin.install 'gssh'
   end
+
+  bottle do
+    root_url 'https://raw.githubusercontent.com/xaviershay/homebrew-bottles/master'
+    cellar :any
+    sha1 "24c1f75ec6d8f779509b3c9384991ee73c7d17b4" => :mountain_lion
+  end
 end
