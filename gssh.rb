@@ -2,10 +2,9 @@ require "formula"
 
 class Gssh < Formula
   homepage "https://github.com/syamp/gssh"
-  url "https://github.com/syamp/gssh/archive/master.zip"
+  url "https://github.com/syamp/gssh/archive/v1.0.0.tar.gz"
   head "https://github.com/syamp/gssh.git"
-  sha1 "1e5979f15503eff38aad9f203951a081951a8d56"
-  version '0.1'
+  sha1 "571ad6a1e2952599eeba78698833019fd5964d9f"
 
   depends_on 'go' => :build
 
