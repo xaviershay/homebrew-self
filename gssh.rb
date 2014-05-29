@@ -2,9 +2,9 @@ require "formula"
 
 class Gssh < Formula
   homepage "https://github.com/syamp/gssh"
-  url "https://github.com/syamp/gssh/archive/v1.0.0.tar.gz"
+  url "https://github.com/syamp/gssh/archive/v1.0.3.tar.gz"
   head "https://github.com/syamp/gssh.git"
-  sha1 "571ad6a1e2952599eeba78698833019fd5964d9f"
+  sha1 "a960bf083f9c74de09c199123ed7441bd1650693"
 
   depends_on 'go' => :build
 
@@ -18,7 +18,6 @@ class Gssh < Formula
   bottle do
     root_url 'https://raw.githubusercontent.com/xaviershay/homebrew-bottles/master'
     cellar :any
-    revision 1
-    sha1 "5c403897eee083b13ec2260399a0d1c84d767afc" => :mountain_lion
+    sha1 "b329fe9b2f8248b2854b3eb0ebed16a52e24292c" => :mavericks
   end
 end
