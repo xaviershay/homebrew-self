@@ -2,23 +2,23 @@ require "formula"
 
 class Erg < Formula
   homepage "https://github.com/xaviershay/erg"
-  url "https://github.com/xaviershay/erg/archive/v1.1.0.tar.gz"
+  url "https://github.com/xaviershay/erg/archive/v1.1.1.tar.gz"
   head "https://github.com/xaviershay/erg.git"
-  sha1 "bc964559206017c4c6e9e688c191d9cea888f512"
+  sha1 "95b3935557a47703998f6aede1e549459f69275d"
 
   depends_on 'go' => :build
 
   def install
     ENV['GOPATH'] = buildpath
-    system 'go', 'get', '-d'
-    system 'go', 'build', 'erg.go'
+    system 'go', 'get', 'github.com/xaviershay/erg'
+    system 'go', 'get', 'github.com/droundy/goopt'
+    system 'go', 'build', 'main/erg.go'
     bin.install 'erg'
   end
 
   bottle do
     root_url 'https://raw.githubusercontent.com/xaviershay/homebrew-bottles/master'
     cellar :any
-    sha1 "df07881d42452f4beb8f46753e1bafc82ca02632" => :mavericks
-    sha1 "9a01536fe0d30615d59b493ac44bb24905ae11a9" => :mountain_lion
+    sha1 "5d8da89bddeb5b0a8b280469c406973ad31c895e" => :mavericks
   end
 end
