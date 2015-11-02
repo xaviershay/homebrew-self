@@ -10,7 +10,8 @@ class Erg < Formula
 
   def install
     ENV['GOPATH'] = buildpath
-    system 'go', 'get', 'github.com/xaviershay/erg'
+    # https://github.com/fvbommel/util/issues/1 fix for -insecure
+    system 'go', 'get', '-insecure', 'github.com/xaviershay/erg'
     system 'go', 'get', 'github.com/droundy/goopt'
     system 'go', 'build', 'main/erg.go'
     bin.install 'erg'
