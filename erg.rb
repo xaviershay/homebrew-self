@@ -1,3 +1,4 @@
+# DEPRECATED - See square/homebrew-self instead.
 require "formula"
 
 class Erg < Formula
